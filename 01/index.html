@@ -4,9 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            background-image: url("Space.JPG");
+        }
+        .grid-container{
+            display: grid;
+            align-content: center;
+            grid-gap: 10px 10px ;
+            height: 930px;
+            width: 1100px;
+            grid-template-columns: 500px 500px;
+            grid-template-rows: 200px 300px 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -465px 0 0 -550px;
+        }
+
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: lightskyblue;
+            background-image: url("bg2.jpg");
+            background-repeat: inherit;
+            color: whitesmoke;
+        }
+        .item4{
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: white;
+        }
+        .item2{
+            padding-left:20px;
+            background-color: darkslateblue;
+            background-image: url("bg4.jpg");
+            color: whitesmoke;
+
+        }
+        .item2 > li{
+            float: left;
+            width: 100px;
+
+        }
+        .item3{
+            padding-left: 20px;
+            background-image: url("bg3.jpg");
+            background-color: darkslategray;
+            text-align: left;
+            color: whitesmoke;
+            font-size: larger;
+
+        }
+        h3{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        meter{
+            display: inline;
+            height: 30px;
+            width: 100px;
+
+            margin-left: 40px;
+            margin-bottom: -5px;
+        }
+
+        <!-- 进度条 -->
+        * {box-sizing: border-box}
+        .container {
+
+            width: 200px;
+            background-color: #ddd;
+        }
+
+        .skills {
+
+            text-align: right;
+            padding-right: 20px;
+            line-height: 40px;
+            color: white;
+        }
+
+
+        .html {width: 10%; background-color: #4CAF50;}
+        .java {width: 15%; background-color: #2196F3;}
+        .python {width: 20%; background-color: darkolivegreen;}
+        .hexo {width: 25%; background-color: purple;}
+
+        .item3 > li{
+            height: 50px;
+        }
+
+        .item4 > table{
+            margin: 0 auto;
+        }
+       .item4  td{
+            width: 200px;
+           text-align: center;
+        }
+
+        button{
+            width: 70px;
+            height: 70px;
+            background-image: url("QQ.png");
+            border: none;
+
+        }
+
+        .item1 td{
+            width: 250px;
+            height: 100px;
+            text-align: center;
+            height: 104px;
+            line-height: 104px;
+        }
+        .item1
+        .icon{
+            width: 500px !important;
+
+        }
+
+
+
+
+
+    </style>
+
+    <script type="text/javascript">
+
+    </script>
+
 </head>
 <body>
-    <p>test</p>
+
+<div class="grid-container">
+    <div class="item1">
+
+        <table class="table1">
+            <tr>
+                <td class="icon" rowspan="2"><img src="rean.png"></td>
+                <td ><img src="name.png">Name:  894</td>
+                <td><img src="loc.png">Loc:  Wuhan</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="age.png">Age:  20
+                </td>
+                <td>
+                    <img src="hobby.png">Hobby:  Sleep
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="item2">
+         <h3>Skills:</h3>
+
+        <table cellspacing="10px">
+            <tr>
+                <td>HTML,CSS</td>
+                <td><div class="container">
+                    <div class="skills html">10%</div></div></td>
+            </tr>
+            <tr>
+                <td>JAVA</td>
+                <td><div class="container">
+                    <div class="skills java">15%</div></div></td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td><div class="container">
+                    <div class="skills python">20%</div></div></td>
+            </tr>
+            <tr>
+                <td>Hexo</td>
+                <td><div class="container">
+                    <div class="skills hexo">25%</div></div></td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="item3">
+        <h3>Intro</h3>
+        <table>
+            <li>Edu: CCNU,cs,junior</li>
+            <li>Aim: Front end engineer</li>
+            <li>Hobbies: Vedio games, music</li>
+            <li>Others: Hopes i can become &#127775.</li>
+        </table>
+    </div>
+    <div class="item4">
+        <h2>Contact</h2>
+        <table class="t">
+
+            <td><a href="https://space.bilibili.com/9106174" target="_blank"><img src="BI.png"></a></td>
+            <td><a href="https://github.com/89-4" target="_blank"><img src="G.png"></a> </td>
+            <td id="qq"><img src="QQ.png" onmouseover="this.src='38767.png'" onmouseout="this.src='QQ.png'" style="cursor: pointer"></img></td>
+            <td> <a href="mailto:tiantianwo@hotmail.com?body=What%20%20do%20you%20want%20to%20say?"><img src="E.png"></a></td>
+        </table>
+    </div>
+
+
+</div>
+
 </body>
 </html>
 
